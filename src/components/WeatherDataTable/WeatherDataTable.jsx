@@ -9,7 +9,6 @@ import {
   getDescriptions,
   getConditions,
 } from '../../redux/weatherData/weatherDataSlice';
-import './WeatherDataTable.css';
 
 const WeatherTable = () => {
   const minTemps = useSelector(getMinTemps);

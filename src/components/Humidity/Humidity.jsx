@@ -2,7 +2,6 @@ import { Line } from 'react-chartjs-2';
 import { Chart } from 'chart.js/auto';
 import { useSelector } from 'react-redux';
 import { getHumidities, getDates } from '../../redux/weatherData/weatherDataSlice';
-import './Humidity.css';
 
 const Humidity = () => {
   const humidities = useSelector(getHumidities);

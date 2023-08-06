@@ -2,7 +2,6 @@ import { Bar } from 'react-chartjs-2';
 import { Chart } from 'chart.js/auto';
 import { useSelector } from 'react-redux';
 import { getMinTemps, getMaxTemps, getDates } from '../../redux/weatherData/weatherDataSlice';
-import './Temperatures.css';
 
 const options = {
   scales: {

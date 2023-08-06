@@ -2,7 +2,6 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchWeatherData } from '../../redux/weatherData/weatherDataSlice';
 import { setLocation } from '../../redux/search/searchSlice';
-import './DefaultLocations.css';
 
 const locations = [
   {

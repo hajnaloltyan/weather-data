@@ -1,7 +1,6 @@
 import { Outlet, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getSelectedLocation } from '../../redux/search/searchSlice';
-import './DetailsLayout.css';
 
 const DetailsLayout = () => {
   const name = useSelector(getSelectedLocation);

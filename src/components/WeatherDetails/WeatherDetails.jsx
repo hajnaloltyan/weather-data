@@ -1,6 +1,5 @@
 import WeatherCharts from '../WeatherCharts/WeatherCharts';
 import WeatherDataTable from '../WeatherDataTable/WeatherDataTable';
-import './WeatherDetails.css';
 
 const WeatherDetails = () => (
   <section className="weather-details">

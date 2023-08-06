@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink } from 'react-router-dom';
 import { fetchPlaceNames, AllSearches, setLocation } from '../../redux/search/searchSlice';
-import './Search.css';
 import { fetchWeatherData } from '../../redux/weatherData/weatherDataSlice';
 
 const Search = () => {
