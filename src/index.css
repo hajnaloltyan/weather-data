@@ -1,0 +1,41 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #4369b2;
+  color: #fff;
+}
+
+:is(h1, h2, h3, ul, li, p) {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding: 20px 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.active {
+  color: #ec4c8a;
+}
+
+button {
+  cursor: pointer;
+  background-color: #2d4573;
+  color: #fff;
+  border: 1px solid #fff;
+}
