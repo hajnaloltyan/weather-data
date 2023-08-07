@@ -2,10 +2,14 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchWeatherData } from '../../redux/weatherData/weatherDataSlice';
 import { setLocation } from '../../redux/search/searchSlice';
+import './PopularLocations.css';
 
 const locations = [
   {
     name: 'New York City', lat: '40.7128', lon: '-74.0060', country: 'USA',
+  },
+  {
+    name: 'Los Angeles', lat: '34.0522', lon: '-118.2437', country: 'USA',
   },
   {
     name: 'Tiszakürt', lat: '46.886605', lon: '20.121711', country: 'Hungary',
@@ -14,13 +18,13 @@ const locations = [
     name: 'Cserkeszőlő', lat: '46.886811', lon: '20.186445', country: 'Hungary',
   },
   {
-    name: 'Los Angeles', lat: '34.0522', lon: '-118.2437', country: 'USA',
-  },
-  {
     name: 'Budapest', lat: '47.4979', lon: '19.0402', country: 'Hungary',
   },
   {
     name: 'Tiszakécske', lat: '46.93261', lon: '20.10349', country: 'Hungary',
+  },
+  {
+    name: 'Szeged', lat: '46.2530', lon: '20.1482', country: 'Hungary',
   },
   {
     name: 'Paris', lat: '48.8566', lon: '2.3522', country: 'France',
@@ -53,18 +57,24 @@ const DefaultLocations = () => {
     dispatch(setLocation(name));
   };
 
+  const darkButtons = [1, 2, 5, 6, 9, 10, 13];
+
   return (
     <div className="popular-wrapper">
-      <h2>Popular Locations</h2>
+      <h3 className="location-title">Popular Locations</h3>
       <div className="location-grid">
         {locations.map(({
           name, lat, lon, country,
-        }) => (
-          <Link key={name} to="details/all-details">
+        }, index) => (
+          <Link
+            key={name}
+            to="details/all-details"
+            className="location-link"
+          >
             <button
               onClick={() => handleSelection(name, lat, lon)}
               type="button"
-              className="location-button"
+              className={darkButtons.includes(index) ? 'location-button' : 'location-button even-button'}
             >
               {name}
               ,

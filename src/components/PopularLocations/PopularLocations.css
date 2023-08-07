@@ -1,0 +1,43 @@
+.popular-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4369b2;
+}
+
+.location-title {
+  font-size: 18px;
+  padding: 0;;
+  background-color: #35548b;
+  width: 100%;
+  padding: 2%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.location-button {
+  background-color: #4061a4;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  height: 20vh;
+  word-wrap: break-word;
+}
+
+.even-button {
+  background-color: #4268af;
+}
+
+.location-button:hover {
+  background-color: #4369b2;
+}

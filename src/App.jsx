@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layouts/Layout';
-import DefaultLocations from './components/DefaultLocations/DefaultLocations';
+import PopularLocations from './components/PopularLocations/PopularLocations';
 import WeatherCharts from './components/WeatherCharts/WeatherCharts';
 import WeatherDetails from './components/WeatherDetails/WeatherDetails';
 import WeatherDataTable from './components/WeatherDataTable/WeatherDataTable';
@@ -13,7 +13,7 @@ const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<DefaultLocations />} />
+        <Route index element={<PopularLocations />} />
         <Route path="details" element={<DetailsLayout />}>
           <Route path="all-details" element={<WeatherDetails />} />
           <Route path="table" element={<WeatherDataTable />} />

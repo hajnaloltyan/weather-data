@@ -35,7 +35,5 @@ a {
 
 button {
   cursor: pointer;
-  background-color: #2d4573;
-  color: #fff;
-  border: 1px solid #fff;
+  border: 0;
 }
