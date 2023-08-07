@@ -39,7 +39,7 @@ const Search = () => {
           id, lat, lon, name, state, country,
         }) => (
           <li key={id}>
-            <Link to="details/all-details">
+            <Link to="details/options">
               <button
                 type="button"
                 className="searchItem"
