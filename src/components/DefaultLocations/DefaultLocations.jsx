@@ -8,10 +8,19 @@ const locations = [
     name: 'New York City', lat: '40.7128', lon: '-74.0060', country: 'USA',
   },
   {
+    name: 'Tiszakürt', lat: '46.886605', lon: '20.121711', country: 'Hungary',
+  },
+  {
+    name: 'Cserkeszőlő', lat: '46.886811', lon: '20.186445', country: 'Hungary',
+  },
+  {
     name: 'Los Angeles', lat: '34.0522', lon: '-118.2437', country: 'USA',
   },
   {
     name: 'Budapest', lat: '47.4979', lon: '19.0402', country: 'Hungary',
+  },
+  {
+    name: 'Tiszakécske', lat: '46.93261', lon: '20.10349', country: 'Hungary',
   },
   {
     name: 'Paris', lat: '48.8566', lon: '2.3522', country: 'France',
