@@ -20,6 +20,23 @@ const Precipitation = () => {
       },
     ],
   };
+
+  const options = {
+    indexAxis: 'y',
+    scales: {
+      x: { ticks: { color: 'white' }, grid: { color: 'white' }, position: 'top' },
+      y: { ticks: { color: 'white' }, grid: { color: 'white' } },
+    },
+    plugins: {
+      legend: {
+        labels: {
+          color: 'white',
+        },
+      },
+    },
+    maintainAspectRatio: false,
+  };
+
   return (
     <>
       <Link to="/details">
@@ -28,7 +45,9 @@ const Precipitation = () => {
           <h4>Go Back</h4>
         </button>
       </Link>
-      <Bar data={precipitationData} className="precip" />
+      <div className="chart">
+        <Bar data={precipitationData} options={options} />
+      </div>
     </>
   );
 };

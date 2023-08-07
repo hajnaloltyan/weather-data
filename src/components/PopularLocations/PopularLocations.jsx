@@ -74,7 +74,7 @@ const DefaultLocations = () => {
             <button
               onClick={() => handleSelection(name, lat, lon)}
               type="button"
-              className={darkButtons.includes(index) ? 'location-button' : 'location-button even-button'}
+              className={darkButtons.includes(index) ? 'location-button odd' : 'location-button even'}
             >
               {name}
               ,

@@ -30,6 +30,14 @@ h2 {
   background-color: #35548b;
 }
 
+.even {
+  background-color: #4268af;
+}
+
+.odd {
+  background-color: #4061a4;
+}
+
 li {
   list-style: none;
 }
@@ -47,4 +55,10 @@ a {
 button {
   cursor: pointer;
   border: 0;
+}
+
+.chart {
+  margin: 0 auto;
+  width: 90%;
+  height: 80vh;
 }

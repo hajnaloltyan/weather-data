@@ -6,10 +6,21 @@ import { FaArrowLeft } from 'react-icons/fa';
 import { getMinTemps, getMaxTemps, getDates } from '../../redux/weatherData/weatherDataSlice';
 
 const options = {
+  indexAxis: 'y',
   scales: {
-    x: { stacked: true },
-    y: { stacked: true },
+    x: {
+      stacked: true, ticks: { color: 'white' }, grid: { color: 'white' }, position: 'top',
+    },
+    y: { stacked: true, ticks: { color: 'white' }, grid: { color: 'white' } },
   },
+  plugins: {
+    legend: {
+      labels: {
+        color: 'white',
+      },
+    },
+  },
+  maintainAspectRatio: false,
 };
 
 const Temperatures = () => {
@@ -41,7 +52,9 @@ const Temperatures = () => {
           <h4>Go Back</h4>
         </button>
       </Link>
-      <Bar data={temperatureData} options={options} className="temps" />
+      <div className="chart">
+        <Bar data={temperatureData} options={options} />
+      </div>
     </>
   );
 };

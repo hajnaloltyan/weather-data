@@ -6,16 +6,7 @@
 .optionLink {
   font-size: 18px;
   font-weight: 700;
-  background-color: #35548b;
   width: 100%;
-  padding: 10% 0;
+  padding: 50px 0;
   text-align: center;
-}
-
-.even-link {
-  background-color: #4268af;
-}
-
-.odd-link {
-  background-color: #4061a4;
 }
