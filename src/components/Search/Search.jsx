@@ -39,7 +39,7 @@ const Search = () => {
           id, lat, lon, name, state, country,
         }) => (
           <li key={id}>
-            <Link to="details/options">
+            <Link to="details">
               <button
                 type="button"
                 className="searchItem"
@@ -63,7 +63,7 @@ const Search = () => {
   return (
     <div className="header-border">
       <div className="wrapper">
-        <h1 className="pageTitle">Weather Data</h1>
+        <h1 className="pageTitle">Historical Weather Data</h1>
         <nav className="home">
           <NavLink to="/">
             <BsFillHouseFill size={25} />
@@ -71,6 +71,7 @@ const Search = () => {
         </nav>
       </div>
       <div className="searchContainer">
+        <h4>In order to view past weather conditions</h4>
         <p>Please select a location:</p>
         <input
           type="text"

@@ -68,7 +68,7 @@ const DefaultLocations = () => {
         }, index) => (
           <Link
             key={name}
-            to="details/options"
+            to="details"
             className="location-link"
           >
             <button
