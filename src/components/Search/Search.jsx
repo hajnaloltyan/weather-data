@@ -71,8 +71,8 @@ const Search = () => {
         </nav>
       </div>
       <div className="searchContainer">
-        <h4>In order to view past weather conditions</h4>
-        <p>Please select a location:</p>
+        <p>In order to view past weather conditions,</p>
+        <p>please select a location:</p>
         <input
           type="text"
           value={query}

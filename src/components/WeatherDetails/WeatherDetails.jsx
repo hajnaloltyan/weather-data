@@ -1,4 +1,6 @@
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import {
   getMinTemps,
   getMaxTemps,
@@ -22,6 +24,12 @@ const WeatherDetails = () => {
 
   return (
     <section className="list-wrapper">
+      <Link to="/details">
+        <button className="go-back" type="button">
+          <FaArrowLeft />
+          <h4>Go Back</h4>
+        </button>
+      </Link>
       {dates.map((date, index) => (
         <ul key={date} className="data-list">
           <li className="list-title"><h3>{date}</h3></li>

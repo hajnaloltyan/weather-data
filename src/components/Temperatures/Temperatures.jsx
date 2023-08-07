@@ -1,6 +1,8 @@
 import { Bar } from 'react-chartjs-2';
 import { Chart } from 'chart.js/auto';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import { getMinTemps, getMaxTemps, getDates } from '../../redux/weatherData/weatherDataSlice';
 
 const options = {
@@ -31,7 +33,17 @@ const Temperatures = () => {
     ],
   };
 
-  return <Bar data={temperatureData} options={options} className="temps" />;
+  return (
+    <>
+      <Link to="/details">
+        <button className="go-back" type="button">
+          <FaArrowLeft />
+          <h4>Go Back</h4>
+        </button>
+      </Link>
+      <Bar data={temperatureData} options={options} className="temps" />
+    </>
+  );
 };
 
 export default Temperatures;

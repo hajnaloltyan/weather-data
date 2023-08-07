@@ -1,5 +1,6 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet, NavLink, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { FaArrowLeft } from 'react-icons/fa';
 import { getSelectedLocation } from '../../redux/search/searchSlice';
 import './DetailsLayout.css';
 
