@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink } from 'react-router-dom';
+import { BsFillHouseFill } from 'react-icons/bs';
 import { fetchPlaceNames, AllSearches, setLocation } from '../../redux/search/searchSlice';
 import { fetchWeatherData } from '../../redux/weatherData/weatherDataSlice';
+import './Search.css';
 
 const Search = () => {
   const [query, setQuery] = useState('');
@@ -63,7 +65,9 @@ const Search = () => {
       <div className="wrapper">
         <h1 className="pageTitle">Weather Data</h1>
         <nav className="home">
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">
+            <BsFillHouseFill size={25} />
+          </NavLink>
         </nav>
       </div>
       <div className="searchContainer">
