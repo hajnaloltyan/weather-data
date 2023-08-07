@@ -21,40 +21,25 @@ const WeatherTable = () => {
   const descriptions = useSelector(getDescriptions);
 
   return (
-    <section className="table-wrapper">
-      <table className="table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Icon</th>
-            <th>Min Temperature</th>
-            <th>Max Temperature</th>
-            <th>Precipitation</th>
-            <th>Humidity</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {dates.map((date, index) => (
-            <tr key={date}>
-              <td>{date}</td>
-              <td>
-                <img
-                  src={`./${icons[index]}.svg`}
-                  alt={conditions[index]}
-                  width="30"
-                  height="30"
-                />
-              </td>
-              <td>{`${minTemps[index]} °C`}</td>
-              <td>{`${maxTemps[index]} °C`}</td>
-              <td>{`${precips[index]} mm`}</td>
-              <td>{`${humidities[index]} %`}</td>
-              <td>{descriptions[index]}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <section className="list-wrapper">
+      {dates.map((date, index) => (
+        <ul key={date} className="data-list">
+          <li className="list-title"><h3>{date}</h3></li>
+          <li className="list-item">
+            <img
+              src={`./${icons[index]}.svg`}
+              alt={conditions[index]}
+              width="30"
+              height="30"
+            />
+          </li>
+          <li className="list-item">{descriptions[index]}</li>
+          <li className="list-item">{`Max. Temperature: ${maxTemps[index]} °C`}</li>
+          <li className="list-item">{`Min. Temperature: ${minTemps[index]} °C`}</li>
+          <li className="list-item">{`Precipitation: ${precips[index]} mm`}</li>
+          <li className="list-item">{`Humidity: ${humidities[index]} %`}</li>
+        </ul>
+      ))}
     </section>
   );
 };

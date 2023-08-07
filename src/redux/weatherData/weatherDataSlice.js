@@ -21,7 +21,7 @@ export const fetchWeatherData = createAsyncThunk(
   async ({ lat, lon }) => {
     try {
       const response = await axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lon}/last14days?unitGroup=metric&key=${apiKey}&include=days&elements=datetime,tempmax,tempmin,humidity,precip,conditions,description,icon`);
-      return response.data.days;
+      return response.data.days.reverse();
     } catch (err) {
       throw err.message;
     }
@@ -40,7 +40,7 @@ const weatherDataSlice = createSlice({
       })
       .addCase(fetchWeatherData.fulfilled, (state, action) => {
         state.loading = false;
-        state.dates = action.payload.map((data) => data.datetime);
+        state.dates = action.payload.map((data) => data.datetime.replace(/-/g, '.'));
         state.minTemps = action.payload.map((data) => data.tempmin);
         state.maxTemps = action.payload.map((data) => data.tempmax);
         state.humidities = action.payload.map((data) => data.humidity);
