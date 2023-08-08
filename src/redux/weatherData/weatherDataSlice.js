@@ -20,7 +20,7 @@ export const fetchWeatherData = createAsyncThunk(
   'weather/fetchWeatherData',
   async ({ lat, lon }) => {
     try {
-      const response = await axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lon}/last14days?unitGroup=metric&key=${apiKey}&include=days&elements=datetime,tempmax,tempmin,humidity,precip,conditions,description,icon`);
+      const response = await axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${lon}/last30days?unitGroup=metric&key=${apiKey}&include=days&elements=datetime,tempmax,tempmin,humidity,precip,conditions,description,icon`);
       return response.data.days.reverse();
     } catch (err) {
       throw err.message;

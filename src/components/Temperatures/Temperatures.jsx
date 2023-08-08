@@ -9,9 +9,9 @@ const options = {
   indexAxis: 'y',
   scales: {
     x: {
-      stacked: true, ticks: { color: 'white' }, grid: { color: 'white' }, position: 'top',
+      ticks: { color: 'white' }, grid: { color: 'white' }, position: 'top',
     },
-    y: { stacked: true, ticks: { color: 'white' }, grid: { color: 'white' } },
+    y: { ticks: { color: 'white' }, grid: { color: 'white' } },
   },
   plugins: {
     legend: {
