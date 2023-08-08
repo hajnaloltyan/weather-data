@@ -36,7 +36,7 @@ This is my Microverse React/Redux Capstone **Weather Data** site, created with R
 
 The App has the functionality to fetch location results based on the typed in search word, and after location selection to provide statistical information of the weather from the previous 14 days.
 
-The App comes with 10 preselected popular locations to choose from.
+The App comes with 14 preselected popular locations to choose from.
 
 It uses 2  different APIs, for the location results it uses: [Geocoding API](https://openweathermap.org/api/geocoding-api)
 And for the historical data: [Visual Crossing Weather API](https://www.visualcrossing.com/resources/documentation/weather-api/timeline-weather-api/)
