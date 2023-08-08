@@ -1,0 +1,20 @@
+.data-list {
+  text-align: center;
+}
+
+.list-title {
+  background-color: #5889e5;
+  padding: 2%;
+}
+
+.list-item {
+  padding: 2%;
+}
+
+.list-item:nth-child(odd) {
+  color: #000;
+}
+
+.list-item:last-child {
+  padding-bottom: 4%;
+}

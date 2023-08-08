@@ -44,15 +44,16 @@
 }
 
 .searchResults {
-  background-color: #fff;
   width: 180px;
   z-index: 1;
   position: absolute;
-  top: 100%;
+  top: 60%;
   font-size: 14px;
 }
 
 .searchItem {
+  background-color: #2f4d85;
+  color: #fff;
   padding: 5px 10px;
   cursor: pointer;
   width: 180px;
@@ -61,5 +62,5 @@
 }
 
 .searchItem:hover {
-  background-color: #ec4c8a;
+  background-color: #fff;
 }

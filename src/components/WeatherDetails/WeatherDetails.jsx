@@ -11,6 +11,7 @@ import {
   getDescriptions,
   getConditions,
 } from '../../redux/weatherData/weatherDataSlice';
+import './WeatherDetails.css';
 
 const WeatherDetails = () => {
   const minTemps = useSelector(getMinTemps);
@@ -37,8 +38,8 @@ const WeatherDetails = () => {
             <img
               src={`./${icons[index]}.svg`}
               alt={conditions[index]}
-              width="30"
-              height="30"
+              width="40"
+              height="40"
             />
           </li>
           <li className="list-item">{descriptions[index]}</li>
@@ -48,6 +49,12 @@ const WeatherDetails = () => {
           <li className="list-item">{`Humidity: ${humidities[index]} %`}</li>
         </ul>
       ))}
+      <Link to="/details">
+        <button className="go-back" type="button">
+          <FaArrowLeft />
+          <h4>Go Back</h4>
+        </button>
+      </Link>
     </section>
   );
 };
