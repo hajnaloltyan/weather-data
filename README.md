@@ -88,6 +88,8 @@ Both sites require registration to acquire the API key.
 
 - [Live Demo Link](https://hajnaloltyan.github.io/weather-data)
 
+- [Video](https://www.loom.com/share/ffb7e160240c4a7db9e4b7aeb6796bf9?sid=1f27d319-b9df-4540-9d15-0f275e3b6558)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
