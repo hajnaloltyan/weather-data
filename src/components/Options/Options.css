@@ -1,0 +1,12 @@
+.optionsLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.optionLink {
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
