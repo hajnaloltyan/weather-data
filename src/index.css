@@ -31,11 +31,11 @@ h2 {
 }
 
 .even {
-  background-color: #4268af;
+  background-color: #1a386e;
 }
 
 .odd {
-  background-color: #4061a4;
+  background-color: #1a386e;
 }
 
 li {
@@ -61,4 +61,14 @@ button {
   margin: 0 auto;
   width: 90%;
   height: 80vh;
+}
+
+@media screen and (min-width: 550px) {
+  .even {
+    background-color: #1a386e;
+  }
+  
+  .odd {
+    background-color: #254fa1;
+  }
 }

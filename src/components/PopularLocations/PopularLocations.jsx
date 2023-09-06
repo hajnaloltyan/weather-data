@@ -57,8 +57,6 @@ const DefaultLocations = () => {
     dispatch(setLocation(name));
   };
 
-  const darkButtons = [1, 2, 5, 6, 9, 10, 13];
-
   return (
     <div className="popular-wrapper">
       <h3 className="location-title">Popular Locations</h3>
@@ -74,7 +72,7 @@ const DefaultLocations = () => {
             <button
               onClick={() => handleSelection(name, lat, lon)}
               type="button"
-              className={darkButtons.includes(index) ? 'location-button odd' : 'location-button even'}
+              className={(index % 2 === 1) ? 'location-button odd' : 'location-button even'}
             >
               {name}
               ,
