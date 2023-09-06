@@ -63,3 +63,15 @@
 .searchItem:hover {
   background-color: #fff;
 }
+
+@media screen and (min-width: 700px) {
+  .searchContainer {
+    font-size: 18px;
+    margin-top: 6%;
+    padding-bottom: 6%;
+  }
+
+  .searchResults {
+    top: 29%;
+  }
+}
