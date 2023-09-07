@@ -43,19 +43,19 @@
 }
 
 .searchResults {
-  width: 180px;
+  width: 190px;
   z-index: 1;
   position: absolute;
-  top: 60%;
-  font-size: 14px;
+  top: 8vh;
+  font-size: 15px;
 }
 
 .searchItem {
   background-color: #2f4d85;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px;
   cursor: pointer;
-  width: 180px;
+  width: 190px;
   text-align: left;
   border: 0;
 }
@@ -69,9 +69,5 @@
     font-size: 18px;
     margin-top: 6%;
     padding-bottom: 6%;
-  }
-
-  .searchResults {
-    top: 29%;
   }
 }

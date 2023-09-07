@@ -9,14 +9,14 @@ const options = {
   indexAxis: 'y',
   scales: {
     x: {
-      ticks: { color: 'white' }, grid: { color: 'white' }, position: 'top',
+      ticks: { color: 'black' }, grid: { color: 'black' }, position: 'top',
     },
-    y: { ticks: { color: 'white' }, grid: { color: 'white' } },
+    y: { ticks: { color: 'black' }, grid: { color: 'black' } },
   },
   plugins: {
     legend: {
       labels: {
-        color: 'white',
+        color: 'black',
       },
     },
   },
@@ -39,7 +39,7 @@ const Temperatures = () => {
       {
         label: 'Max Daily Temperature (°C)',
         data: maxTemps,
-        backgroundColor: 'darkred',
+        backgroundColor: 'purple',
       },
     ],
   };

@@ -24,13 +24,13 @@ const Humidity = () => {
   const options = {
     indexAxis: 'y',
     scales: {
-      x: { ticks: { color: 'white' }, grid: { color: 'white' }, position: 'top' },
-      y: { ticks: { color: 'white' }, grid: { color: 'white' } },
+      x: { ticks: { color: 'black' }, grid: { color: 'black' }, position: 'top' },
+      y: { ticks: { color: 'black' }, grid: { color: 'black' } },
     },
     plugins: {
       legend: {
         labels: {
-          color: 'white',
+          color: 'black',
         },
       },
     },

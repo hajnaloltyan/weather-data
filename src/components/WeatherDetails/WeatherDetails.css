@@ -15,6 +15,19 @@
   color: #000;
 }
 
-.list-item:last-child {
-  padding-bottom: 4%;
+@media screen and (min-width: 800px) {
+  .data-list {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+
+  .list-title {
+    width: 15%;
+    background-color: transparent;
+  }
+
+  .list-item {
+    width: 25%;
+  }
 }
